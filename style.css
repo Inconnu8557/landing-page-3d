@@ -40,7 +40,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    z-index: 999;
 }
 header h1 {
     margin: 0;
@@ -59,6 +58,7 @@ nav a {
     transition: color 0.2s ease;
     text-decoration: none;
     color: inherit;
+    z-index: 999;
 }
 nav a:hover {
     color: #a7a7a7;
@@ -73,6 +73,7 @@ nav a:hover {
     font-weight: 500;
     transition: background-color 0.2s ease;
     cursor: pointer;
+    z-index: 999;
 }
 .btn-sign:hover {
     background-color: white;
@@ -162,4 +163,67 @@ main  {
 }
 .btn-signin-main:hover {
     background-color: gray;
+}
+.robot-3d {
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+/*Responsive*/
+@media (max-width: 1300px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+    .content {
+        margin-top: 85%;
+    }
+    .robot-3d {
+        scale: 0.8;
+        top: -20%;
+        right: 2%;
+    }
+}
+/*Mobile Responsive*/
+@media(max-width: 768px) {
+    header {
+        padding: 1rem 0.1rem;
+    }
+    nav {
+        display: none;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .btn-sign {
+        padding: 0.6rem 1.5rem;
+    }
+    .content {
+        margin-top: 25rem;
+    }
+    .robot-3d {
+        scale: 0.5;
+        top: -25%;
+        right: 0;
+    }
+    .content {
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+    .tag-box {
+        width: 12rem;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .btn-get-started {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.2rem;
+    }
+    .btn-signin-main {
+        font-size: 0.85rem;
+        padding: 0.8rem 2rem;
+    }
 }

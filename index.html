@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -13,32 +14,53 @@
     <div class="layer-blur"></div>
     <div class="container">
         <header>
-            <h1 class="logo">AlessCreator</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">AlessCreator</h1>
             <nav>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
+                <a data-aos="fade-down" data-aos-duration="1500" href="">Test</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="">Test</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="">Test</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="">Test</a>
             </nav>
-            <button class="btn-sign">Sign in</button>
+            <button data-aos="fade-down" data-aos-duration="1500" class="btn-sign">Sign in</button>
         </header>
         <main>
-            <div class="content">
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="1500" class="content">
                 <div class="tag-box">
                     <div class="tag">Introducing &wedbar;</div>
                 </div>
-                <h1>Email For<br>DEV</h1>
-                <p class="description">
+                <h1 data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2000">Email For<br>DEV</h1>
+                <p data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2500" class="description">
                     The best saas for dev je ne sais pas quoi mettre dans cette description
                 </p>
-                <div class="buttons">
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="3000" class="buttons">
                     <a href="#" class="btn-get-started">Documentation &gt;</a>
                     <a href="#" class="btn-signin-main">Get Started &gt;</a>
-                </div> 
+                </div>
             </div>
         </main>
+        <spline-viewer data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="3000" class="robot-3dk" url="https://prod.spline.design/OAU285LkDCqK7SvI/scene.splinecode"></spline-viewer>
+k
     </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.87/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
